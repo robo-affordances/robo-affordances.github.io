@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vision-Robotics Bridge</title>
+  <title>VRB: Affordances from Human Videos as a Versatile Representation for Robotics</title>
 
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet"> -->
@@ -147,7 +147,7 @@
       <div class="hero-body">
         <div align="center">
         <video id="teaser" muted playsinline autoplay loop width="100%">
-          <source src="./resources/vrb_initial_v2_compressed.mp4"
+          <source src="./resources/vrb_web_init_compressed.mp4"
                   type="video/mp4">
         </video>
         
@@ -215,7 +215,7 @@
               <div class="columns is-centered has-text-centered">
                 <div class="column is-two-thirds">
                 <div class="content has-text-justified interpolation-panel">
-                    <p style="text-align: center;font-size: 18px"> We extract affordances from large scale human video datasets such as <a href="https://ego4d-data.org/">Ego4D</a> and <a href="https://epic-kitchens.github.io/2023"></a> Epic Kitchens. We use off the shelf hand-object interaction detectors to find the contact region and post contact wrist trajectory.</p>
+                    <p style="text-align: center;font-size: 18px"> We extract affordances from large scale human video datasets such as <a href="https://ego4d-data.org/">Ego4D</a> and <a href="https://epic-kitchens.github.io/2023">Epic Kitchens</a>. We use off the shelf hand-object interaction detectors to find the contact region and post contact wrist trajectory.</p>
                 </div>
               </div>
             </div>
@@ -502,10 +502,10 @@
           <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Affordance Model-based Data Collection</strong></h3>
           <div class="columns is-centered">
             <div class="column is-centered">
-              <video class="center" playsinline autoplay loop muted src="./resources/data_collection.mp4" width="100%" style="border-radius:10px;"></video>
+              <video class="center" playsinline autoplay loop muted src="./resources/data_collection_crop.mp4" width="110%" style="border-radius:10px;"></video>
             </div>
             <div class="column is-centered">
-              <img src="./resources/dc_results_2.jpg" alt="Data Collection Results" style="border-radius: 10px; width: 77%;">
+              <img src="./resources/dc_results_2.jpg" alt="Data Collection Results" style="border-radius: 10px; width: 100%;">
             </div>
           </div>
         </div>
@@ -551,10 +551,10 @@
           <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Reward-Free Exploration</strong></h3>
           <div class="columns is-vcentered custom-interpolation-panel; padding-bottom: 10px">
             <div class="column">
-              <video class="center" playsinline autoplay loop muted src="./resources/expl_pot.mp4" width="100%" style="border-radius:10px;"></video>
+              <video class="center" playsinline autoplay loop muted src="./resources/expl_pot_crop.mp4" width="100%" style="border-radius:10px;"></video>
             </div>
             <div class="column">
-              <video class="center" playsinline autoplay loop muted src="./resources/expl_cabinet.mp4" width="100%" style="border-radius:10px;"></video>
+              <video class="center" playsinline autoplay loop muted src="./resources/expl_cabinet_crop.mp4" width="100%" style="border-radius:10px;"></video>
             </div>
           </div>
           <div class="columns">
@@ -639,6 +639,39 @@
       </div>
     </div>
   </section>
+
+  <!-- <section class="section">
+    <div class="container">
+      <div class="columns is-centered is-multiline">
+        <div class="column is-half">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Simulation Benchmark</strong></h3>
+          <div class="columns">
+            <div class="column is-half">
+              <img src="./resources/kitchen.png" alt="Kitchen Simulation" style="border-radius: 10px; width: 100%;">
+            </div>
+            <div class="column is-half">
+              <div class="columns is-multiline" style="margin: 0;">
+                <div class="column is-full">
+                  <div class="is-vcentered interpolation-panel">
+                    <div class="content">
+                      <p style="font-size: 15px">
+                        We have also tested VRB on a simulation benchmark, specifically, the <a href="https://github.com/Farama-Foundation/D4RL/blob/master/d4rl/kitchen/kitchen_envs.py">Franka Kitchen benchmark from D4RL</a>. Our method demonstrates superior performance compared to the baselines on three distinct tasks within the benchmark.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-full">
+                  <img src="./resources/sim_results.jpg" alt="Simulation Results" style="border-radius: 1px; width: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  
   
   <section class="section">
     <div class="container">
