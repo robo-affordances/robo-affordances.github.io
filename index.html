@@ -206,7 +206,7 @@
         </div>
           <br>
           <br>
-          <h2 class="subtitle is-4" style="text-align: center;">Extracting Visual Affordances from Human Videos</h2>
+          <!-- <h2 class="subtitle is-4" style="text-align: center;">Extracting Visual Affordances from Human Videos</h2> -->
           <div class="columns is-centered">
             <div class="column is-full" style="text-align: center;">
               <img src="resources/affordance_pipeline.png" alt="Image description" width="80%">
@@ -225,19 +225,6 @@
           </div>
           <div class="columns is-centered">
             <div class="columns is-centered">
-              <div class="column is-full" style="text-align: center;">
-                <img src="resources/ego4d_pipeline.jpg" alt="Image description" width="80%">
-                <br>
-                <br>
-  
-                <div class="columns is-centered has-text-left">
-                  <div class="column is-two-thirds">
-                  <div class="content has-text-left interpolation-panel">
-                <p style="text-align: center; font-size: 18px"> <strong>Illustration of annotation pipeline </strong>  (Left) Find the frame with hand-object contact. (Middle) Track the wrist to obtain the post contact trajectory. (Right) Map both to the first human entry frame for reference.</p>
-              </div>
-              </div>
-
-            </div>
             <!-- <div class="column is-full" style="text-align: center;">
               <video playsinline autoplay loop muted src="./resources/affordance_pipeline.mp4" width="80%" style="border: none;"></video>
               <div class="columns is-centered has-text-centered">
@@ -270,7 +257,7 @@
             <div class="column is-two-thirds">
               <div class="content has-text-justified">
                 <div class="interpolation-panel">
-                <p style="text-align: center; font-size: 15px">We first find the contact point using a hand object interaction detector. We find the post contact trajectory by tracking the wrist after the contact frame. Once we have detected these frames, a major issue is that the <strong> the human is still in the scene </strong>, leading to a distribution shift.</p>
+                <p style="text-align: center; font-size: 15px">We first find the contact point using a hand object interaction detector, and the post contact trajectory by tracking the wrist. Once we have detected these frames, a major issue is that the <strong> the human is still in the scene </strong>, leading to a distribution shift.</p>
               </div>
             </div>
             </div>
@@ -302,11 +289,58 @@
 
           <br>
           <h2 class="title is-3">Our Affordance Pipeline</h2>
-          <div class="columns is-centered">
+          <!-- <div class="columns is-centered">
             <div class="column">
               <img src="resources/full_pipeline.jpg" alt="Full Pipeline" style="border: 1px; border-radius:1px; width: 60%;">
             </div>
+          </div> -->
+          <!-- <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="columns is-centered">
+                <div style="display: flex; align-items: center; height: 100%;"> <!-- Add this flex container -->
+                  <!-- <img src="resources/ego4d_pipeline.jpg" alt="Image description" width="100%">
+                </div>
+                <div class="column">
+                  <img src="resources/full_pipeline.jpg" alt="Full Pipeline" style="border: 1px; border-radius:1px; width: 100%;">
+                </div>
+              </div>
+              <br>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-full">
+                  <div class="content has-text-justified interpolation-panel">
+                    <p style="text-align: center; font-size: 18px">
+                      <strong>Illustration of annotation pipeline </strong>: Find the frame with hand-object contact, track the wrist to obtain the post contact trajectory, map both to the first human entry frame for reference.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> --> 
+
+
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <div class="columns is-centered">
+                <div class="column" style="display: flex; align-items: center; justify-content: center;"> <!-- Add flexbox properties -->
+                  <img src="resources/ego4d_pipeline.jpg" alt="Image description" width="100%">
+                </div>
+                <div class="column" style="display: flex; align-items: center; justify-content: center;"> <!-- Add flexbox properties -->
+                  <img src="resources/full_pipeline.jpg" alt="Full Pipeline" style="border: 1px; border-radius:1px; width: 100%;">
+                </div>
+              </div>
+              <br>
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-full">
+                  <div class="content has-text-justified interpolation-panel">
+                    <p style="text-align: center; font-size: 18px">
+                      <strong>Illustration of annotation pipeline </strong>: Find the frame with hand-object contact, track the wrist to obtain the post contact trajectory, map both to the first human entry frame for reference.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
       
@@ -460,7 +494,7 @@
 
 
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
@@ -492,7 +526,48 @@
         </div> 
       </div>
     </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;">
+            <bold>Robot Learning Paradigms</bold>
+          </h3>
+  
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <img src="./resources/para_1.png" alt="Para 1" width="100%">
+            </div>
+            <div class="column is-half">
+              <img src="./resources/para_2.png" alt="Para 2" width="100%">
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <img src="./resources/para_3.png" alt="Para 3" width="100%">
+            </div>
+            <div class="column is-half">
+              <img src="./resources/aff_action_space.png" alt="Para 4" width="100%">
+            </div>
+          </div>
+          <br>
+          <div class="columns is-centered">
+            <!-- <div class="column is-two-thirds"> -->
+              <div class="is-vcentered interpolation-panel">
+                <div class="content has-text-left">
+                  <p style="font-size: 18px">
+                    <strong>Robot Learning Paradigms</strong> (Top-Left) Affordance-model driven data collection for offline imitation. (Top-Right) Reward free exploration. (Bottom-Left) Goal-conditioned policy learning with our affordance model. (Bottom-Right) Using the affordance model outputs to reparameterize actions.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
 
 
   <section class="section">
@@ -578,7 +653,7 @@
               <img src="./resources/aff_action_space.png" alt="Affordance Action Space" style="border-radius: 1px; width: 100%;">
             </div>
             <div class="column">
-              <img src="./resources/action_space_results.png" alt="Action Space Results" style="border-radius: 10px; width: 80%;">
+              <img src="./resources/action_space_results.png" alt="Action Space Results" style="border-radius: 10px; width: 90%;">
             </div>
           </div>
         </div>
@@ -587,7 +662,7 @@
   </section>
 
 
-  <section class="hero is-light is-small">
+  <!-- <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -595,18 +670,42 @@
             <h2 class="title is-3">Project Video</h2>
           </div>
       </div>
-    
-  
       <div class="columns is-centered has-text-centered">
         <div class="column is-max-desktop">
-          <div id="method_video" class="publication-video">
-            <iframe src="https://www.youtube.com/embed/WdMYGESu8Ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="method_video" class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dmQ5FldzGRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </div>
       </div>
     </div>
+  </section> -->
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Project Video</h2>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div id="method_video" style="border-radius: 10px; border: 2px solid #ccc; overflow: hidden; width: 672px; height: 378px; margin: 0 auto;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dmQ5FldzGRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%; object-fit: cover;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+  
+  
+  
+  
+  
+
 
   <section class="section">
     <div class="container">
